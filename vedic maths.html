@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vedic Maths Program | TutoryHub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body{
+      margin:0;
+      font-family:'Poppins',sans-serif;
+      background:#0f172a;
+      color:#f8fafc;
+    }
+
+    header{
+      background:#020617;
+      padding:20px;
+    }
+
+    header h2{margin:0;}
+    header p{
+      margin:4px 0 0;
+      color:#94a3b8;
+      font-size:14px;
+    }
+
+    .container{
+      max-width:1100px;
+      margin:auto;
+      padding:50px 20px;
+    }
+
+    .hero{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:40px;
+      align-items:center;
+    }
+
+    .hero img{
+      width:100%;
+      border-radius:20px;
+    }
+
+    .hero h1{font-size:42px;}
+    .hero p{
+      color:#cbd5f5;
+      line-height:1.7;
+    }
+
+    .box{
+      background:#020617;
+      padding:30px;
+      border-radius:20px;
+      margin-top:40px;
+    }
+
+    ul{
+      padding-left:20px;
+      line-height:1.8;
+    }
+
+    .benefits{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:16px;
+      margin-top:20px;
+    }
+
+    .benefit{
+      background:#0f172a;
+      padding:16px;
+      border-radius:14px;
+      border:1px solid #1e293b;
+      transition:0.3s;
+    }
+
+    .benefit:hover{
+      transform:translateY(-4px);
+      border-color:#38bdf8;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:15px;
+      padding:12px 28px;
+      border-radius:999px;
+      background:#38bdf8;
+      color:#022c22;
+      text-decoration:none;
+      font-weight:600;
+      transition:.3s;
+    }
+
+    .btn:hover{
+      background:#0ea5e9;
+      color:white;
+    }
+
+    form{
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+
+    input, textarea{
+      padding:12px 14px;
+      border-radius:10px;
+      border:none;
+      font-family:Poppins,sans-serif;
+    }
+
+    input:focus, textarea:focus{
+      outline:2px solid #38bdf8;
+    }
+
+    footer{
+      margin-top:60px;
+      padding:30px;
+      text-align:center;
+      color:#94a3b8;
+    }
+
+    @media(max-width:900px){
+      .hero{grid-template-columns:1fr;}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h2>TutoryHub</h2>
+  <p>Think. Train. Thrive.</p>
+</header>
+
+<div class="container">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div>
+      <h1>Vedic Maths Program</h1>
+      <p>
+        Master fast mental calculation techniques using ancient Vedic Maths methods.
+        This program improves speed, accuracy, confidence, and logical thinking in students.
+      </p>
+      <a href="programs.html" class="btn">← Back to Programs</a>
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1600195077077-7c815f540a3d?q=80&w=1200&auto=format&fit=crop" alt="Vedic Maths Learning">
+
+  </section>
+
+  <!-- WHAT IS VEDIC MATHS -->
+  <div class="box">
+    <h3>What is Vedic Maths?</h3>
+    <p>
+      Vedic Maths is a system of mental calculation techniques derived from ancient Indian texts.
+      It enables students to solve complex mathematical problems quickly and efficiently,
+      often mentally, without lengthy steps.
+    </p>
+  </div>
+
+  <!-- BENEFITS -->
+  <div class="box">
+    <h3>Key Benefits</h3>
+    <div class="benefits">
+      <div class="benefit">⚡ Faster Calculations</div>
+      <div class="benefit">🧠 Improved Concentration</div>
+      <div class="benefit">📈 Better Academic Performance</div>
+      <div class="benefit">💡 Logical & Creative Thinking</div>
+      <div class="benefit">🎯 Boosts Confidence</div>
+      <div class="benefit">📝 Exam & Competitive Advantage</div>
+    </div>
+  </div>
+
+  <!-- WHAT STUDENTS LEARN -->
+  <div class="box">
+    <h3>What Students Will Learn</h3>
+    <ul>
+      <li>Quick addition, subtraction, multiplication & division</li>
+      <li>Mental calculation techniques</li>
+      <li>Number patterns & shortcuts</li>
+      <li>Square & cube calculations</li>
+      <li>Application in school curriculum</li>
+      <li>Speed improvement strategies</li>
+    </ul>
+  </div>
+
+  <!-- ENQUIRY FORM -->
+  <div class="box">
+    <h3>Enquire About Vedic Maths</h3>
+
+    <form id="enquiryForm">
+      <input type="text" placeholder="Student / Parent Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <textarea rows="4" placeholder="Age / Class of Student & Your Query" required></textarea>
+
+      <button type="submit" class="btn">Submit Enquiry</button>
+    </form>
+
+    <p id="successMsg" style="display:none;color:#38bdf8;margin-top:15px;">
+      ✅ Thank you! Our team will contact you shortly.
+    </p>
+  </div>
+
+  <!-- BROCHURE -->
+  <!--<div class="box">
+    <h3>Download Program Brochure</h3>
+    <a class="btn" href="TutoryHub-Vedic-Maths-Brochure.pdf" download>
+      Download Brochure (PDF)
+    </a>
+  </div>-->
+
+</div>
+
+<footer>
+  <p>📞 Contact: 8867316707 | ✉️ Email: tutoryhub07@gmail.com</p>
+  <p>© 2026 TutoryHub · Think. Train. Thrive.</p>
+</footer>
+
+<script>
+document.getElementById("enquiryForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  document.getElementById("successMsg").style.display = "block";
+  this.reset();
+});
+</script>
+
+</body>
+</html>

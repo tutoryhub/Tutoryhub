@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Foreign Languages Program | TutoryHub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body{
+      margin:0;
+      font-family:'Poppins',sans-serif;
+      background:#0f172a;
+      color:#f8fafc;
+    }
+
+    header{
+      background:#020617;
+      padding:20px;
+    }
+
+    header h2{margin:0;}
+    header p{
+      margin:4px 0 0;
+      color:#94a3b8;
+      font-size:14px;
+    }
+
+    .container{
+      max-width:1100px;
+      margin:auto;
+      padding:50px 20px;
+    }
+
+    .hero{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:40px;
+      align-items:center;
+    }
+
+    .hero img{
+      width:100%;
+      border-radius:20px;
+    }
+
+    .hero h1{font-size:42px;}
+    .hero p{
+      color:#cbd5f5;
+      line-height:1.7;
+    }
+
+    .box{
+      background:#020617;
+      padding:30px;
+      border-radius:20px;
+      margin-top:40px;
+    }
+
+    .languages{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      gap:15px;
+      margin-top:20px;
+    }
+
+    .lang{
+      background:#0f172a;
+      padding:14px;
+      border-radius:12px;
+      text-align:center;
+      font-weight:500;
+      border:1px solid #1e293b;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:15px;
+      padding:12px 28px;
+      border-radius:999px;
+      background:#38bdf8;
+      color:#022c22;
+      text-decoration:none;
+      font-weight:600;
+      transition:.3s;
+    }
+
+    .btn:hover{
+      background:#0ea5e9;
+      color:white;
+    }
+
+    form{
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+
+    input, textarea{
+      padding:12px 14px;
+      border-radius:10px;
+      border:none;
+      font-family:Poppins,sans-serif;
+    }
+
+    input:focus, textarea:focus{
+      outline:2px solid #38bdf8;
+    }
+
+    footer{
+      margin-top:60px;
+      padding:30px;
+      text-align:center;
+      color:#94a3b8;
+    }
+
+    @media(max-width:900px){
+      .hero{grid-template-columns:1fr;}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h2>TutoryHub</h2>
+  <p>Think. Train. Thrive.</p>
+</header>
+
+<div class="container">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div>
+      <h1>Foreign Languages Program</h1>
+      <p>
+        Learn global languages with expert tutors and interactive lessons.
+        Our foreign language courses focus on speaking, listening, reading,
+        writing, and cultural understanding for real-world communication.
+      </p>
+      <a href="programs.html" class="btn">← Back to Programs</a>
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df" alt="Foreign Language Learning">
+  </section>
+
+  <!-- LANGUAGES -->
+  <div class="box">
+    <h3>Languages Offered</h3>
+    <div class="languages">
+      <div class="lang">French</div>
+      <div class="lang">German</div>
+      <div class="lang">Spanish</div>
+      <div class="lang">Korean</div>
+      <div class="lang">Japanese</div>
+      <div class="lang">Italian</div>
+      <div class="lang">Mandarin</div>
+    </div>
+  </div>
+
+  <!-- PROGRAM DETAILS -->
+  <div class="box">
+    <h3>What You Will Learn</h3>
+    <ul>
+      <li>Pronunciation & Accent Training</li>
+      <li>Conversational Speaking Skills</li>
+      <li>Grammar & Sentence Structure</li>
+      <li>Reading & Writing Practice</li>
+      <li>Listening & Comprehension</li>
+      <li>Culture & Everyday Usage</li>
+      <li>Exam & Certification Preparation</li>
+    </ul>
+  </div>
+
+  <!-- ENQUIRY FORM -->
+  <div class="box">
+    <h3>Enquire About This Program</h3>
+
+    <form id="enquiryForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="tel" placeholder="Your Phone Number" required>
+      <textarea rows="4" placeholder="Which language are you interested in?" required></textarea>
+
+      <button type="submit" class="btn">Submit Enquiry</button>
+    </form>
+
+    <p id="successMsg" style="display:none;color:#38bdf8;margin-top:15px;">
+      ✅ Thank you! We will contact you shortly.
+    </p>
+  </div>
+
+  <!-- BROCHURE -->
+  <!--<div class="box">
+    <h3>Download Program Brochure</h3>
+    <a class="btn" href="TutoryHub-Brochure.pdf" download>
+      Download Brochure (PDF)
+    </a>
+  </div>-->
+
+</div>
+
+<footer>
+  <p>📞 Contact: 8867316707 | ✉️ Email: tutoryhub07@gmail.com</p>
+  <p>© 2026 TutoryHub · Think. Train. Thrive.</p>
+</footer>
+
+<script>
+document.getElementById("enquiryForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  document.getElementById("successMsg").style.display = "block";
+  this.reset();
+});
+</script>
+
+</body>
+</html>

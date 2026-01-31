@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Maths Program | TutoryHub</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body{
+  margin:0;
+  font-family:Poppins,sans-serif;
+  background:#0f172a;
+  color:#f8fafc;
+}
+header{
+  background:#020617;
+  padding:18px 30px;
+}
+header a{
+  color:#93c5fd;
+  text-decoration:none;
+}
+.section{
+  max-width:1000px;
+  margin:auto;
+  padding:70px 30px;
+}
+.hero img{
+  width:100%;
+  border-radius:20px;
+  margin-bottom:30px;
+}
+h1{ color:#93c5fd; }
+.box{
+  background:#020617;
+  padding:25px;
+  border-radius:16px;
+  margin-top:30px;
+}
+ul{
+  padding-left:20px;
+}
+.enquire{
+  display:inline-block;
+  margin-top:30px;
+  background:#2563eb;
+  color:white;
+  padding:14px 30px;
+  border-radius:40px;
+  text-decoration:none;
+}
+.enquire:hover{
+  background:#1e40af;
+}
+form{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+input, textarea{
+  padding:12px 14px;
+  border-radius:10px;
+  border:none;
+  outline:none;
+  font-family:Poppins,sans-serif;
+}
+
+input:focus, textarea:focus{
+  outline:2px solid #2563eb;
+}
+
+button.enquire{
+  border:none;
+  cursor:pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <a href="programs.html">← Back to Programs</a>
+</header>
+
+<section class="section">
+
+<div class="hero">
+  <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b">
+</div>
+
+<h1>Mathematics Program</h1>
+<p>Build strong fundamentals, logical thinking, and problem-solving skills with expert guidance.</p>
+
+<div class="box">
+  <h3>What Students Will Learn</h3>
+  <ul>
+    <li>Core concepts (Algebra, Geometry, Arithmetic)</li>
+    <li>Exam-oriented preparation</li>
+    <li>Mental math techniques</li>
+    <li>Application-based problem solving</li>
+  </ul>
+</div>
+
+<div class="box">
+  <h3>Mode</h3>
+  <p>Online (Live + Recorded Sessions)</p>
+</div>
+
+<div class="box">
+  <h3>Who Is This For?</h3>
+  <p>Students from Grade 1 to Grade 12</p>
+</div>
+
+<div class="box">
+  <h3>Enquire About This Program</h3>
+
+  <form id="enquiryForm">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <input type="tel" placeholder="Your Phone Number" required>
+    <textarea placeholder="Your Message" rows="4" required></textarea>
+
+    <button type="submit" class="enquire">Submit Enquiry</button>
+  </form>
+
+  <p id="successMsg" style="display:none;color:#22c55e;margin-top:15px;">
+    ✅ Thank you! Your enquiry has been submitted.
+  </p>
+</div>
+
+<!--<div class="box">
+  <h3>Program Brochure</h3>
+  <a class="enquire" href="TutoryHub-Brochure.pdf" download>
+    Download Brochure (PDF)
+  </a>
+</div>-->
+
+</section>
+
+</body>
+<script>
+document.getElementById("enquiryForm").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  document.getElementById("successMsg").style.display = "block";
+  this.reset();
+});
+</script>
+
+</html>
